@@ -1,859 +1,458 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+  
+  <title>Virtual Folio - Portfolio HTML5 Template</title>
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Jacob Trabelsi</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/themify-icons.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="Yacob-designstyle-smoothie-m.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Yacob-designstyle-smoothie-m.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Yacob-designstyle-smoothie-m.png">
-    <link rel="manifest" href="site.webmanifest">
-
+  <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/owl-carousel/owl.carousel.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/nice-select/css/nice-select.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/vendor/fancybox/css/jquery.fancybox.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/virtual.css">
+  
+  <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
 </head>
-
-<body id="top">
-
-    <div id="preloader">
-        <div id="loader"></div>
+<body class="theme-red">
+  
+  <!-- Back to top button -->
+  <div class="btn-back_to_top">
+    <span class="ti-arrow-up"></span>
+  </div>
+  
+  <!-- Setting button -->
+  <div class="config">
+    <div class="template-config">
+      <!-- Settings -->
+      <div class="d-block">
+        <button class="btn btn-fab btn-sm" id="sideel" title="Settings"><span class="ti-settings"></span></button>
+      </div>
+      <!-- Puschase -->
+      <div class="d-block">
+        <a href="https://macodeid.com/projects/virtual-folio/" class="btn btn-fab btn-sm" title="Get this template" data-toggle="tooltip" data-placement="left"><span class="ti-download"></span></a>
+      </div>
+      <!-- Help -->
+      <div class="d-block">
+        <a href="#" class="btn btn-fab btn-sm" title="Help" data-toggle="tooltip" data-placement="left"><span class="ti-help"></span></a>
+      </div>
+    </div>
+    <div class="set-menu">
+      <p>Select Color</p>
+      <div class="color-bar" data-toggle="selected">
+        <span class="color-item bg-theme-red selected" data-class="theme-red"></span>
+        <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
+        <span class="color-item bg-theme-green" data-class="theme-green"></span>
+        <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
+        <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
+      </div>
+      <select class="custom-select d-block my-2" id="change-page">
+        <option value="">Choose Page</option>
+        <option value="index">Topbar</option>
+        <option value="blog-topbar">Blog (Topbar)</option>
+        <option value="index-2">Minibar</option>
+        <option value="blog-minibar">Blog (Minibar)</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="vg-page page-home" id="home" style="background-image: url(assets/img/bg_image_1.jpg)">
+    <!-- Navbar -->
+    <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
+      <div class="container">
+        <a href="" class="navbar-brand">JT</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
+          <span class="ti-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="#home" class="nav-link" data-animate="scrolling">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link" data-animate="scrolling">A propos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link" data-animate="scrolling">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="nav-link" data-animate="scrolling">Tableau de compétence</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link" data-animate="scrolling">Contact</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </div> <!-- End Navbar -->
+    <!-- Caption header -->
+    <div class="caption-header text-center wow zoomInDown">
+      <h5 class="fw-normal">Bienvenue</h5>
+      <h1 class="fw-light mb-4"> <b class="fg-theme">Jacob </b> Trabelsi</h1>
+      <div class="badge">Développeur Web</div> <br><br><br>
+      <h5 class="fw-normal"> Mesurer les progrès de la programmation en lignes de code <br>
+        c’est comme mesurer les progrès <br>
+        de la construction d’un avion en poids. 
+        <br><br> Bill Gates
+    </h5>
+    </div> <!-- End Caption header -->
+    <div class="floating-button"><span class="ti-mouse"></span></div>
+  
+  </div>
+ 
+ 
+  <div class="vg-page page-about" id="about">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-4 py-3">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/photo .jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <h1 class="fw-light">Jacob Trabelsi</h1>
+          <h5 class="fg-theme mb-3">Développeur Web</h5>
+          <p class="text-muted">
+            Je suis passionné d'informatique depuis que j'ai découvert cette univers. 
+            J'ai commencé à réellement mis intéressé ya quelque année et j'espère pouvoir 
+            être toujours aussi passionné et pouvoir continuer sur cette voix
+          </p>
+          <ul class="theme-list">
+            
+            <li><b>Ville :</b> Paris</li>
+            <li><b>Date de naissance:</b> 16 Janvier 2003</li>
+            <li><b>Age:</b> 19 ans</li>
+            <li><b>Mail :</b> yacob.trabelsi@gmail.com</li>
+            <li><b>Diplôme :</b> BTS</li>
+            
+          </ul>
+          <button class="btn btn-theme-outline" href="assets/img/cv.pdf">Télécharge mon CV</button>
+        </div>
+      </div>
     </div>
 
-    <!-- site header
-    ================================================== -->
-    <header class="s-header">
 
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="Yacob-designstyle-smoothie-m.png" alt="Homepage">
-            </a>
+    
+  
+
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-6 wow fadeInRight">
+          <h2 class="fw-normal">Parcours</h2>
+          <ul class="timeline mt-4 pr-md-5">
+            <li>
+              <div class="title">2019 - 2021</div>
+              <div class="details">
+                <h5>Yavné</h5>
+                <small class="fg-theme">Lycee</small>
+                <p>Le groupe scolaire Yavné est une organisation éducative établie à Paris depuis 1948, 
+                  qui a un contrat avec l'État. J'ai étudié les mathématiques, la physique et les sciences 
+                  économiques et sociales (SES) à cet établissement, et j'ai continué avec les mathématiques et la physique en terminale.</p> <br>
+                  <p>Obtention du Baccaloréat, Mention Assez Bien. </p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2021 - 2023</div>
+              <div class="details">
+                <h5>Ort Montreuil</h5>
+                <small class="fg-theme">Etudes Supèrieurs</small>
+                <p>Etudiant en BTS Service Informatique aux Organisationsen option développement. </p> <br>
+           
+
+              </div>
+            </li>
+           
+          </ul>
+        </div>
+        <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
+          <h2 class="fw-normal">Experiences ~ Stages</h2>
+          <ul class="timeline mt-4 pr-md-5">
+            <li>
+              <div class="title">2017-2018</div>
+              <div class="details">
+                <h5>Tatanka</h5>
+                <small class="fg-theme">Stage 3eme</small>
+                <p>Au cours de ce stage, j'ai été amené à travailler sur des tâches liées au marketing car 
+                  je n'avais pas encore déterminé mon orientation professionnelle.</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2021 - 2022</div>
+              <div class="details">
+                <h5>Alfred IA</h5>
+                <small class="fg-theme">Stage BTS</small>
+                <p>Alfred est une entreprise dont la mission est de fournir des solutions de sécurité pour les commerces. 
+                  Nous envisageons de proposer aux commerçants une technologie d'intelligence artificielle capable de détecter 
+                  les comportements suspects. Si un tel comportement est identifié, une notification sera envoyée au gérant du commerce, 
+                  accompagnée d'une vidéo montrant le potentiel voleur. Cette vidéo permettra alors au gérant de décider si une intervention 
+                  est nécessaire.</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2022-2023</div>
+              <div class="details">
+                <h5>MasciMedia</h5>
+                <small class="fg-theme">Stage </small>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container py-5">
+    <h1 class="text-center fw-normal wow fadeIn">Mes Compétences</h1>
+    <div class="row py-3">
+      <div class="col-md-6">
+        <div class="px-lg-3">
+          <h4 class="wow fadeInUp">Langage Web </h4>
+          <div class="progress-wrapper wow fadeInUp">
+            <span class="caption">JavaScript</span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="progress-wrapper wow fadeInUp">
+            <span class="caption">HTML</span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="progress-wrapper wow fadeInUp">
+            <span class="caption"> CSS</span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="progress-wrapper wow fadeInUp">
+            <span class="caption"> CMS ~ Wordpress </span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="px-lg-3">
+          <h4 class="wow fadeInUp">Langage de programmation</h4>
+          <div class="progress-wrapper wow fadeInUp">
+            <span class="caption">Phyton</span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            
+          </div>
+          <div class="progress-wrapper wow fadeInUp">
+            <span class="caption">JAVA</span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            
+          </div>
+          <div class="progress-wrapper wow fadeInUp">
+            <span class="caption">SQL</span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress-wrapper wow fadeInUp">
+            <span class="caption">PHP</span>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- Portfolio page -->
+  <div class="vg-page page-portfolio" id="portfolio">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Portfolio</div>
+      </div>
+      <h1 class="text-center fw-normal wow fadeInUp">Mes projets</h1>
+      <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
+        <button class="btn btn-theme-outline selected" data-filter="*">Tout</button>
+        <button class="btn btn-theme-outline" data-filter=".stage">Stages</button>
+        <button class="btn btn-theme-outline" data-filter=".programmation">Programmations</button> 
+        <button class="btn btn-theme-outline" data-filter=".cms">CMS</button>
+        <button class="btn btn-theme-outline" data-filter=".ecole">Ecole</button>
+      </div>
+
+      <div class="gridder my-3">
+        <div class="grid-item stage cms wow zoomIn">
+          <div class="img-place" data-src=" assets/img/work/work-1.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>">
+            <img src="assets/img/alfred.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Alfred IA</h5>
+              <p>Wordpress</p>
+            </div>
+          </div>
+          <a href="Stage1.html" class="btn btn-theme-outline">explication</a>
         </div>
 
-        <nav class="header-nav-wrap">
-            <ul class="header-main-nav">
-                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
-                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-                <li><a class="smoothscroll" href="#services" title="services">mission</a></li>
-                <li><a class="smoothscroll" href="#works" title="works">stage</a></li>
-                <li><a class="smoothscroll" href="#grille" title="grille">Grille de Competences</a></li>
-                <li><a class="smoothscroll" href="#contact" title="contact us">Contacts</a></li>
+        <div class="grid-item programmation ecole wireframes wow zoomIn">
+          <div class="img-place" data-src=" assets/img/work/work-2.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
+            <img src=" assets/img/work/work-2.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Projet quiz </h5>
+              <p>PHP</p>
+            </div>
+          </div>
+          <a href="quizz.html" class="btn btn-theme-outline">explication</a>
+        </div>
+
+
+        <div class="grid-item programmation ecole  wow zoomIn">
+          <div class="img-place" data-src=" assets/img/work/work-5.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>">
+            <img src="assets/img/autoecole1.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme"> Auto Ecole</h5>
+              <p>JAVA</p>
+            </div>
+          </div>
+          <a href="autoecole1.html" class="btn btn-theme-outline">explication</a>
+        </div>
+
+        <div class="grid-item programmation stage wow zoomIn">
+          <div class="img-place" data-src=" assets/img/work/work-3.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Games, Streaming</p>">
+            <img src="assets/img/masci.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">MasciMedia</h5>
+              <p>Symfony</p>
+            </div>
+          </div>
+          <a href="Stage2.html" class="btn btn-theme-outline">explication</a>
+        </div>
+
+
+        <div class="grid-item programmation ecole  wow zoomIn">
+          <div class="img-place" data-src=" assets/img/work/work-4.jpg" data-fancybox data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>">
+            <img src=" assets/img/work/work-4.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme"> Auto Ecole </h5>
+              <p>Symfony</p>
+            </div>
+          </div>
+          <a href="autoecole2.html" class="btn btn-theme-outline">explication</a>
+        </div>
+        
+        
+      </div> <!-- End gridder -->
+ 
+
+  
+
+  
+
+  
+  <!-- Footer -->
+  <div class="vg-footer">
+    <h1 class="text-center">Jacob Trabelsi</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 py-3">
+          <div class="footer-info">
+            <p>Petit mot</p>
+            <hr class="divider">
+            <p class="fs-large fg-white">Je suis ravi de me connecter avec vous, de vous écouter et de vous aider. 
+              Travaillons ensemble pour construire quelque chose de formidable en transformant votre idée en un produit encore meilleur.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 py-3">
+          <div class="float-lg-right">
+            <p>Suivez-moi</p>
+            <hr class="divider">
+            <ul class="list-unstyled">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Youtube</a></li>
             </ul>
-
-            <ul class="header-social">
-                <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 py-3">
+          <div class="float-lg-right">
+            <p>Contactez-moi</p>
+            <hr class="divider">
+            <ul class="list-unstyled">
+              <li>yacob.trabelsi@gmail.com</li>
+              <li>07 61 89 17 96</li>
             </ul>
-        </nav>
-
-        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
-
-    </header> <!-- end s-header -->
-
-
-    <!-- intro
-    ================================================== -->
-    <section id="intro" class="s-intro target-section">
-
-        <div class="row intro-content">
-
-            <div class="column large-9 mob-full intro-text">
-                <h3>Bienvenu sur le portfolio de Jacob Trabelsi</h3>
-                <h1>
-                    Mesurer les progrès de la programmation en lignes de code <br>
-                    c’est comme mesurer les progrès<br>
-                    de la construction d’un avion en poids.<br>
-                    Bill Gates
-                </h1>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-12 mb-3">
+          <h3 class="fw-normal text-center">Contact</h3>
+        </div>
+        <div class="col-lg-6">
+          <form class="mb-3">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Adresse Mail">
+              <input type="submit" class="btn btn-theme no-shadow" value="Contact">
             </div>
-
-<!--            <div class="intro-scroll">-->
-<!--                <a href="#about" class="intro-scroll-link smoothscroll">-->
-<!--                    Scroll For More-->
-<!--                </a>-->
-<!--            </div>-->
-
-            <div class="intro-grid"></div>
-            <div class="intro-pic"></div>
-
-        </div> <!-- end row -->
-
-    </section> <!-- end intro -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about target-section">
-
-        <div class="about-me">
-
-
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">A propos de moi</h2>
-                </div>
-            </div>
-
-            <div class="row about-me__content" data-aos="fade-up">
-                <div class="column large-full about-me__text">
-                    <p class="lead">
-                        Date de naissance: 16 Janvier 2003 <br>
-                        Age: 19 ans<br>
-                        Téléphone: +33 7 61 89 17 96 <br>
-                        Diplôme: Bachelor<br>
-                        Email: yacob.trabelsi@gmail.com
-                        <a href="CV%20Jacob%20Trabelsi%20(2).pdf" download="CV%20Jacob%20Trabelsi%20(2).pdf" class="btn btn--primary full-width">Download CV</a>
-
-                    </p>
-                </div>
-            </div>
-
-
-
-
-        </div> <!-- end about-me -->
-
-        <div class="about-experience">
-
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">Parcour et stage </h2>
-                </div>
-            </div>
-
-            <div class="row about-experience__timeline">
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--work"></span>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">2017-2018</p>
-                                <h3 class="item-title">tatanka</h3>
-                                <h5>stage de 3eme</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>lors de ce stage j'ai du faire du marqueting car je ne savais pas dans quoi m'orienté </p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">2021 - 2022</p>
-                                <h3 class="item-title">alfred ia</h3>
-                                <h5>stage de 1er annee bts </h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Alfred est une entreprise ayant pour objectif de sécuriser un commerce
-                                    Nous allons proposer au commerçant une intelligence artificiel permettant de détecter les gestes suspect
-                                    En cas de geste suspect, une notification suivi de la vidéo du voleur sera envoyer au gérant qui pourra alors juger si il s’agit bien d’un vol ou non
-                                </p>
-                            </div>
-                            <div class="row about-me__buttons">
-
-                                    <a href="https://www.mindmeister.com/map/2326408261" class="btn btn--primary full-width" target="_blank">shema</a>
-                                    <a href="https://yacobtrabelsi.wixsite.com/my-site" class="btn btn--primary full-width" target="_blank">site</a>
-                                    <a href="https://alfred-eyes.ai/" class="btn btn--primary full-width" target="_blank">Alfred</a>
-
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">2022-2023</p>
-                                <h3 class="item-title">MasciMedia</h3>
-                                <h5>stage de 2eme annee bts</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                            <div class="row about-me__buttons">
-
-                                <a href="images/imageEntie.pdf" download="imageEntie" class="btn btn--primary full-width">modelisation</a>
-                                <a href="https://www.google.com/url?q=https://preprod.macsimedia.com/ganisrael/&source=gmail&ust=1678976337323000&usg=AOvVaw19b-ckki-ObfiY1_PkOxut" class="btn btn--primary full-width" target="_blank">MasciMedia</a>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--education"></span>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">2019 - 2021</p>
-                                <h3 class="item-title">yabne</h3>
-                                <h5>lycee</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>
-                                    Le groupe scolaire Yabné est une institution éducative, en contrat avec l’État, qui fonctionne depuis 1948 à Paris.
-                                    J'y ai etudier les math,la physique et la SES.En terminal j'ai garder les math et la physique
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">2021 - 2023</p>
-                                <h3 class="item-title">Ort Montreuil</h3>
-                                <h5>mes etudes superieur</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>
-                                    j'etudie a l'ORT, à Montreuil.
-                                    je suis étudiant en BTS de Service Informatique aux Organisations.<br>
-                                    langages :PHP,HTML,CSS,JAVA,PYTHON,SQL <br>
-
-                                    <ul>Competence:
-                                        <li>Algorithmique</li>
-                                        <li>Concevoir et développer des programmes et applications</li>
-                                        <li>tilisation d'IDE : (PHPSTORM,Inteliji)</li>
-                                        <li>utilisation de git</li>
-                                        <li>consevoir et repartir des tache</li>
-                                        <li>certification ANSSI</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div> <!-- end about-experience -->
-
-    </section> <!-- end s-about -->
-
-
-    <!-- services
-    ================================================== -->
-
-
-
-    <!-- CTA
-    ================================================== -->
-<!--    <section class="s-cta ss-dark">-->
-
-<!--&lt;!&ndash;        <div class="row heading-block heading-block&#45;&#45;center" data-aos="fade-up">&ndash;&gt;-->
-<!--&lt;!&ndash;            <div class="column large-full">&ndash;&gt;-->
-<!--&lt;!&ndash;                <h2 class="section-desc">&ndash;&gt;-->
-<!--&lt;!&ndash;                    Need a great reliable web hosting?&ndash;&gt;-->
-<!--&lt;!&ndash;                </h2>&ndash;&gt;-->
-<!--&lt;!&ndash;            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div> &lt;!&ndash; end heading-block &ndash;&gt;&ndash;&gt;-->
-
-<!--&lt;!&ndash;        <div class="row cta-content" data-aos="fade-up">&ndash;&gt;-->
-<!--&lt;!&ndash;            <div class="column large-full">&ndash;&gt;-->
-<!--&lt;!&ndash;                <p>&ndash;&gt;-->
-<!--&lt;!&ndash;                We highly recommend <a href="https://www.dreamhost.com/r.cgi?287326">DreamHost</a>.&ndash;&gt;-->
-<!--&lt;!&ndash;                Powerful web and Wordpress hosting. Guaranteed.&ndash;&gt;-->
-<!--&lt;!&ndash;                Starting at $2.95 per month.&ndash;&gt;-->
-<!--&lt;!&ndash;                </p>&ndash;&gt;-->
-
-<!--&lt;!&ndash;                <a href="https://www.dreamhost.com/r.cgi?287326" class="btn full-width">Get Started</a>&ndash;&gt;-->
-<!--&lt;!&ndash;            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div> &lt;!&ndash; end ad-content &ndash;&gt;&ndash;&gt;-->
-
-<!--    </section> &lt;!&ndash; end s-cta &ndash;&gt;-->
-
-
-    <!-- works
-    ================================================== -->
-    <section id="works" class="s-works target-section">
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">Mes Stage</h2>
-            </div>
-        </div> <!-- end heading-block -->
-
-
-
-
-
-        <div class="masonry-wrap">
-
-            <div class="masonry">
-                <div class="grid-sizer"></div>
-
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/nomAlfred.png" class="thumb-link" title="The Beetle Car" data-size="1050x700">
-                                <img src="images/portfolio/nomAlfred.png"
-                                     srcset="images/portfolio/nomAlfred.png 1x, images/portfolio/nomAlfred.png 2x" alt="">
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                nom:
-                            </h4>
-                            <p class="item-folio__cat">
-                                alfred
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p></p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/adresse.png" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                                <img src="images/portfolio/adresse.png"
-                                     srcset="images/portfolio/adresse.png 1x, images/portfolio/adresse.png 2x" alt="">
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                adresse:
-                            </h4>
-                            <p class="item-folio__cat">
-                                15 rue du chateau
-                            </p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/Capture%20d’écran%202023-01-06%20070034.png" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                                <img src="images/portfolio/Capture%20d’écran%202023-01-06%20070034.png"
-                                     srcset="images/portfolio/Capture%20d’écran%202023-01-06%20070034.png 1x, images/portfolio/Capture%20d’écran%202023-01-06%20070034.png 2x" alt="">
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                effectif:
-                            </h4>
-                            <p class="item-folio__cat">
-                                un petit groupe de 5 a 6 personne
-                            </p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/apresAppuie.png" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                                <img src="images/portfolio/apresAppuie.png"
-                                     srcset="images/portfolio/apresAppuie.png 1x, images/portfolio/apresAppuie.png 2x" alt="">
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                resultat
-                            </h4>
-                            <p class="item-folio__cat">
-                                test et exemple
-                            </p>
-                        </div>
-                        <div class="item-folio__caption">
-                            <p>apres avoir appuyer </p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
+          </form>
+        </div>
+        <div class="col-12">
+          <p class="text-center mb-0 mt-4">Copyright &copy;2023. Tout droit réservé | Créer par Jacob Trabelsi</a></p>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End footer -->
+  
+  
+  <script src=" assets/js/jquery-3.5.1.min.js"></script>
     
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/premierCode.png" class="thumb-link" title="Shutterbug" data-size="1050x700">
-                                <img src="images/portfolio/premierCode.png"
-                                     srcset="images/portfolio/premierCode.png 1x, images/portfolio/premierCode.png 2x" alt="">
-                            </a>    
-                        </div>
+  <script src=" assets/js/bootstrap.bundle.min.js"></script>
     
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                code en JS:
-                            </h4>
-                            <p class="item-folio__cat">
-                                utilise pour faire des animation
-                            </p>
-                        </div>
+  <script src=" assets/vendor/owl-carousel/owl.carousel.min.js"></script>
     
-                        <div class="item-folio__caption">
-                            <p>nous avons voulu faire une animation dans la page home cependant les choix étais très limite nous avons alors décider de me laisser réaliser et coder des animation a l’aide de Velo qui permet d’incorporé du code dans Wix grâce à cela j’ai réalisé différent test sur les possibilité de d’animation a l’aide de Velo
-                                Mon premier essaie a étais de faire  défiler différent photo a l0aide d’un bouton
-                            </p>
-                        </div>
-                    </div>
-                </div> <!-- end masonry__brick -->
+  <script src=" assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    
+  <script src=" assets/vendor/isotope/isotope.pkgd.min.js"></script>
+    
+  <script src=" assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+    
+  <script src=" assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
 
+  <script src=" assets/vendor/wow/wow.min.js"></script>
 
+  <script src=" assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
 
+  <script src=" assets/vendor/waypoints/jquery.waypoints.min.js"></script>
 
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="stage2/nomStage2.png" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                                <img src="stage2/nomStage2.png"
-                                     srcset="stage2/nomStage2.png 1x, stage2/nomStage2.png 2x" alt="">
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                nom:
-                            </h4>
-                            <p class="item-folio__cat">
-                                MasciMedia
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="masonry__brick" data-aos="fade-up">
-                    <div class="item-folio">
-                        <div class="item-folio__thumb">
-                            <a href="stage2/form1.png" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                                <img src="stage2/form1.png"
-                                     srcset="stage2/form1.png 1x, stage2/form1.png 2x" alt="">
-                            </a>
-                        </div>
-                        <div class="item-folio__text">
-                            <h4 class="item-folio__title">
-                                formulaire:
-                            </h4>
-                            <p class="item-folio__cat">
-                                pour les parent
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="masonry__brick" data-aos="fade-up">
-                <div class="item-folio">
-                    <div class="item-folio__thumb">
-                        <a href="stage2/modal1.png" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                            <img src="stage2/modal1.png"
-                                 srcset="stage2/modal1.png 1x, stage2/modal1.png 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="item-folio__text">
-                        <h4 class="item-folio__title">
-                            model:
-                        </h4>
-                        <p class="item-folio__cat">
-                            formulaire enfant
-                        </p>
-                    </div>
-                </div>
-            </div><div class="masonry__brick" data-aos="fade-up">
-                <div class="item-folio">
-                    <div class="item-folio__thumb">
-                        <a href="stage2/modal2.png" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                            <img src="stage2/modal2.png"
-                                 srcset="stage2/modal2.png 1x, stage2/modal2.png 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="item-folio__text">
-                        <h4 class="item-folio__title">
-                            formulaire:
-                        </h4>
-                        <p class="item-folio__cat">
-                            forumailaire enfant via le modal
-                        </p>
-                    </div>
-                </div>
-            </div><div class="masonry__brick" data-aos="fade-up">
-                <div class="item-folio">
-                    <div class="item-folio__thumb">
-                        <a href="stage2/semaineCrud.png" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                            <img src="stage2/semaineCrud.png"
-                                 srcset="stage2/semaineCrud.png 1x, stage2/semaineCrud.png 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="item-folio__text">
-                        <h4 class="item-folio__title">
-                            modifier,ajouter:
-                        </h4>
-                        <p class="item-folio__cat">
-                            une semaine du cote admin
-                        </p>
-                    </div>
-                </div>
-            </div><div class="masonry__brick" data-aos="fade-up">
-                <div class="item-folio">
-                    <div class="item-folio__thumb">
-                        <a href="stage2/semaineForm.png" class="thumb-link" title="Woodcraft" data-size="1050x700">
-                            <img src="stage2/semaineForm.png"
-                                 srcset="stage2/semaineForm.png 1x, stage2/semaineForm.png 2x" alt="">
-                        </a>
-                    </div>
-                    <div class="item-folio__text">
-                        <h4 class="item-folio__title">
-                            les sections:
-                        </h4>
-                        <p class="item-folio__cat">
-                            differente section ajouter et modifier dynamiquement
-                        </p>
-                    </div>
-                </div>
-            </div>
+  <script src=" assets/js/google-maps.js"></script>
+    
+  <script src=" assets/js/topbar-virtual.js"></script>
 
-
-
-                <!--                <div class="masonry__brick" data-aos="fade-up">-->
-<!--                    <div class="item-folio">-->
-<!--                        <div class="item-folio__thumb">-->
-<!--                            <a href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" title="Grow Green" data-size="1050x700">-->
-<!--                                <img src="images/portfolio/shutterbug.jpg" -->
-<!--                                     srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="">-->
-<!--                            </a>-->
-<!--                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>-->
-<!--                        </div>-->
-<!--                        <div class="item-folio__text">-->
-<!--                            <h4 class="item-folio__title">-->
-<!--                                Shutterbug-->
-<!--                            </h4>-->
-<!--                            <p class="item-folio__cat">-->
-<!--                                Branding-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                        <div class="item-folio__caption">-->
-<!--                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div> &lt;!&ndash; end masonry__brick &ndash;&gt;-->
-
-<!--                <div class="masonry__brick" data-aos="fade-up">-->
-<!--                    <div class="item-folio">-->
-<!--                            -->
-<!--                        <div class="item-folio__thumb">-->
-<!--                            <a href="images/portfolio/gallery/g-lamp.jpg" class="thumb-link" title="Guitarist" data-size="1050x700">-->
-<!--                                <img src="images/portfolio/lamp.jpg" -->
-<!--                                     srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">-->
-<!--                            </a>-->
-<!--                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>-->
-<!--                        </div>-->
-<!--                        <div class="item-folio__text">-->
-<!--                            <h4 class="item-folio__title">-->
-<!--                                Lamp-->
-<!--                            </h4>-->
-<!--                            <p class="item-folio__cat">-->
-<!--                                Web Design-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                        <div class="item-folio__caption">-->
-<!--                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div> &lt;!&ndash; end masonry__brick &ndash;&gt;-->
-<!--        -->
-<!--                <div class="masonry__brick" data-aos="fade-up">-->
-<!--                    <div class="item-folio">-->
-<!--                            -->
-<!--                        <div class="item-folio__thumb">-->
-<!--                            <a href="images/portfolio/gallery/g-fuji.jpg" class="thumb-link" title="Palmeira" data-size="1050x700">-->
-<!--                                <img src="images/portfolio/fuji.jpg"-->
-<!--                                     srcset="images/portfolio/fuji.jpg 1x, images/portfolio/fuji@2x.jpg 2x" alt="">-->
-<!--                            </a>-->
-<!--                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link" target="_blank"></a>-->
-<!--                        </div>-->
-<!--                        <div class="item-folio__text">-->
-<!--                            <h4 class="item-folio__title">-->
-<!--                                Fuji-->
-<!--                            </h4>-->
-<!--                            <p class="item-folio__cat">-->
-<!--                                Web Design-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                        <div class="item-folio__caption">-->
-<!--                            <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>-->
-<!--                        </div>-->
-                    </div>
-                </div> <!-- end masonry__brick -->
-
-            </div> <!-- end masonry -->
-
-        </div> <!-- end masonry-wrap -->
-
-    </section> <!-- end s-work -->
-
-    <section id="services" class="s-services ss-dark target-section">
-
-        <div class="shadow-overlay"></div>
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">mes mission </h2>
-
-<!--                <p class="section-desc">-->
-<!--                    My passion and goal is to help you make your business standout.-->
-<!--                </p>-->
-            </div>
-        </div> <!-- end heading-block -->
-
-        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">la fausse barre de recherche </h4>
-                    <p>
-                        Ce projet est le premier projet que j'ai realise. je l'ai realiser en binome.
-                        Il avais pour but de comparer different mots dans une liste a une barre de recherche.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">quiz</h4>
-                    <p>
-                        Ce projet a etais fais en groupe de 3.
-                        Le but de ce projet etais de proposer un formulaire permettant de faire des question, une liste de question et de questionnaire et de faire des questionnaire afin que sous un compte eleve ces questionnaire soit fait et leur resultat saffiche a la fin de celui-ci
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">auto ecole (web)</h4>
-                    <p>
-                        ce projet est fais en groupe de 3.
-                        ce projet a pour but de sinscrire a des lecon et davoir un planning pour des cour afin davoir un permis.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">auto ecole (java)</h4>
-                    <p>
-                        ce projet est fais en groupe de 3.
-                        ce projet a pour but de sinscrire a des lecon et davoir un planning pour des cour afin davoir un permis.
-                    </p>
-                </div>
-            </div>
-
-            <!--            <div class="column item-service" data-aos="fade-up">-->
-            <!--                <div class="item-service__content">-->
-            <!--                    <h4 class="item-title">UI/UX Design</h4>-->
-            <!--                    <p>-->
-            <!--                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et -->
-            <!--                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus -->
-            <!--                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.-->
-            <!--                    </p>-->
-            <!--                </div>-->
-            <!--            </div>-->
-
-            <!--            <div class="column item-service" data-aos="fade-up">-->
-            <!--                <div class="item-service__content">-->
-            <!--                    <h4 class="item-title">Mobile Design</h4>-->
-            <!--                    <p>-->
-            <!--                    Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et -->
-            <!--                    a delectus. Vel sequi vitae voluptatem perspiciatis eligendi. Voluptatibus optio natus -->
-            <!--                    asperiores est commodi amet quia architecto. Dolores necessitatibus et.-->
-            <!--                    </p>-->
-            <!--                </div>-->
-            <!--            </div>-->
-
-        </div> <!-- end services-list -->
-
-    </section> <!-- end s-services -->
-    <!-- testimonies
-    ================================================== -->
-    <section id="grille" class="s-works target-section">
-        <h2>
-            voici un lien ci-dessous pour telecharger ma grille de competence
-        </h2>
-        <div class="column large-half tab-full" data-aos="fade-up">
-            <a href="images/JacobtblOfficiel.pdf" download="JacobtblOfficiel.pdf" class="btn btn--primary full-width">Download Grille</a>
-        </div>
-<!--        <div class="row testimonials" data-aos="fade-up">-->
-
-<!--            <div class="column large-full testimonials__slider">-->
-
-<!--                <div class="testimonials__slide">-->
-<!--                    <p>Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. -->
-<!--                    Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.-->
-<!--                    Laudantium quia consequatur molestias delectus culpa.</p>-->
-<!--                    <div class="testimonials__info">-->
-<!--                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">-->
-<!--                        <cite class="testimonials__cite">-->
-<!--                            <strong>Tim Cook</strong>-->
-<!--                            <span>CEO, Apple</span>-->
-<!--                        </cite>-->
-<!--                    </div>-->
-<!--                </div> &lt;!&ndash; end testimonials__slide &ndash;&gt;-->
-
-<!--                <div class="testimonials__slide">-->
-<!--                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.-->
-<!--                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.-->
-<!--                        Quasi voluptas eius distinctio. Atque eos maxime.</p>-->
-<!--                    <div class="testimonials__info">-->
-<!--                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">-->
-<!--                        <cite class="testimonials__cite">-->
-<!--                            <strong>Sundar Pichai</strong>-->
-<!--                            <span>CEO, Google</span>-->
-<!--                        </cite>-->
-<!--                    </div>-->
-<!--                </div> &lt;!&ndash; end testimonials__slide &ndash;&gt;-->
-
-<!--                <div class="testimonials__slide">-->
-<!--                    <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  -->
-<!--                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.-->
-<!--                    Voluptatem dignissimos ut.</p>-->
-<!--                    <div class="testimonials__info">-->
-<!--                        <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonials__avatar">-->
-<!--                        <cite class="testimonials__cite">-->
-<!--                            <strong>Satya Nadella</strong>-->
-<!--                            <span>CEO, Microsoft</span>-->
-<!--                        </cite>-->
-<!--                    </div>-->
-<!--                </div> &lt;!&ndash; end testimonials__slide &ndash;&gt;-->
-<!--                -->
-<!--            </div> &lt;!&ndash; end testimonials__slider &ndash;&gt;-->
-
-<!--        </div> &lt;!&ndash; end testimonials &ndash;&gt;-->
-
-    </section> <!-- end s-testimonials -->
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact ss-dark target-section">
-
-        <div class="row heading-block" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading">contactez-moi</h2>
-            </div>
-        </div>
-
-        <div class="row contact-main" data-aos="fade-up">
-            <div class="column large-full">
-                <p class="contact-email">
-                    <a href="mailto:yacob.trabelsi@gmail.com">yacob.trabelsi@gmail.com</a>
-                </p>
-
-                <p class="section-desc">
-                    Je suis heureux de me connecter, d'écouter et d'aider.
-                    Travaillons ensemble et construisons quelque chose de génial.
-                    Transformons votre idée en un produit encore plus grand.
-                <a href="mailto:yacob.trabelsi@gmail.com">Envoyez moi un email</a>.
-                </p>
-            </div>
-        </div>
-
-        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
-
-            <div class="column large-5 medium-full contact-phone">
-                <h4>Appellez-moi</h4>
-                <a href="tel:197-543-2345">07 61 89 17 96</a>
-            </div>
-
-            <div class="column large-7 medium-full contact-social">
-                <h4>Social</h4>
-                <ul>
-                    <li><a href="#0" title="Facebook">Facebook</a></li>
-                    <li><a href="#0" title="Twitter">Twitter</a></li>
-                    <li><a href="#0" title="Instagram">Instagram</a></li>
-                </ul>
-            </div>
-
-        </div> <!-- end contact-infos -->
-
-    </section> <!-- end s-contact -->
-
-
-    <!-- footer
-    ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="column large-full ss-copyright">
-                <span>© Copyright Epitome 2019</span> 
-                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
-            </div>            
-
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"></a>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </div><!-- end photoSwipe background -->
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+  
 </body>
+</html>
